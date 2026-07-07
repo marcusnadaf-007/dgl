@@ -7,10 +7,13 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  tanstackStart: {
+    router: {
+      entry: "./router.tsx",
+    },
+  },
   // Target Vercel so the project builds out-of-the-box when pushed to Vercel via GitHub.
   nitro: {
     preset: "vercel",
   },
 });
-
-
